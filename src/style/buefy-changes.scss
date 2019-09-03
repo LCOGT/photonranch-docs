@@ -1,0 +1,51 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #718174;
+$primary-invert: findColorInvert($primary);
+$twitter: rgb(64, 152, 252);
+$twitter-invert: findColorInvert($twitter);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "twitter": ($twitter, $twitter-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+// Reset the Buefy .number styles. It messes up markdown styling. 
+.number {
+  -webkit-box-align:initial;
+      -ms-flex-align:initial;
+          align-items:initial;
+  background-color:initial;
+  border-radius:initial;
+  display: -initial;
+  font-size: initial;
+  height:initial;
+  -webkit-box-pack:initial;
+      -ms-flex-pack:initial;
+          justify-content:initial;
+  margin: initial;
+  min-width: initial;
+  padding: initial;
+  text-align:initial;
+  vertical-align:initial;
+}

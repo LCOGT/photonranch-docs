@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <section>
+    <p>What is this all about?</p>
+  </section>
 </template>
+
+<script>
+
+// Syntax highlighting. Default includes js, html, css. Import all others.
+export default {
+  name: 'About',
+  data() {
+    return {
+    }
+  },
+}
+</script>
+    

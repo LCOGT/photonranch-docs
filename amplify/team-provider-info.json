@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "ptr-docs-dev-20190830110725-authRole",
+            "UnauthRoleArn": "arn:aws:iam::306389350997:role/ptr-docs-dev-20190830110725-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::306389350997:role/ptr-docs-dev-20190830110725-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "ptr-docs-dev-20190830110725-deployment",
+            "UnauthRoleName": "ptr-docs-dev-20190830110725-unauthRole",
+            "StackName": "ptr-docs-dev-20190830110725",
+            "StackId": "arn:aws:cloudformation:us-east-1:306389350997:stack/ptr-docs-dev-20190830110725/05a35310-cb51-11e9-a7a1-0ec11b444504"
+        }
+    }
+}

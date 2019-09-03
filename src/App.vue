@@ -1,19 +1,28 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <the-nav />
+    <div class="buffer" />
+    <router-view class="container"/>
   </div>
 </template>
 
+<script>
+import TheNav from '@/components/TheNav'
+export default {
+  name: 'App',
+  components: {
+    TheNav,
+  },
+}
+</script>
+
 <style lang="scss">
+@import "./style/buefy-changes";
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 #nav {
@@ -25,5 +34,8 @@
       color: #42b983;
     }
   }
+}
+.buffer {
+  margin-bottom: 3em;
 }
 </style>
