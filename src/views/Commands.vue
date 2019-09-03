@@ -6,28 +6,31 @@
 
         <b-tabs type="is-toggle">
             <b-tab-item label="Camera">
-                <div style="margin-top: 3em;" class="content" v-html="CommandSyntaxCamera.html" />
+                <div class="doc content" v-html="CommandSyntaxCamera.html" />
             </b-tab-item>
             <b-tab-item label="Mount">
-                <div style="margin-top: 3em;" class="content" v-html="CommandSyntaxMount.html" />
+                <div class="doc content" v-html="CommandSyntaxMount.html" />
             </b-tab-item>
             <b-tab-item label="Enclosure">
-                <div style="margin-top: 3em;" class="content" v-html="CommandSyntaxEnclosure.html" />
+                <div class="doc content" v-html="CommandSyntaxEnclosure.html" />
             </b-tab-item>
             <b-tab-item label="Focuser">
-                <div style="margin-top: 3em;" class="content" v-html="CommandSyntaxFocuser.html" />
+                <div class="doc content" v-html="CommandSyntaxFocuser.html" />
             </b-tab-item>
             <b-tab-item label="Rotator">
-                <div style="margin-top: 3em;" class="content" v-html="CommandSyntaxRotator.html" />
+                <div class="doc content" v-html="CommandSyntaxRotator.html" />
             </b-tab-item>
             <b-tab-item label="Filter Wheel">
-                <div style="margin-top: 3em;" class="content" v-html="CommandSyntaxFilterwheel.html" />
+                <div class="doc content" v-html="CommandSyntaxFilterW.html" />
+            </b-tab-item>
+            <b-tab-item label="Sequencer">
+                <div class="doc content" v-html="CommandSyntaxSequencer.html" />
             </b-tab-item>
             <b-tab-item label="Selector">
-                <div style="margin-top: 3em;" class="content" v-html="CommandSyntaxSelector.html" />
+                <div class="doc content" v-html="CommandSyntaxSelector.html" />
             </b-tab-item>
             <b-tab-item label="Switch">
-                <div style="margin-top: 3em;" class="content" v-html="CommandSyntaxSwitch.html" />
+                <div class="doc content" v-html="CommandSyntaxSwitch.html" />
             </b-tab-item>
         </b-tabs>
 
@@ -40,12 +43,13 @@
 import VueMarkdown from 'vue-markdown'
 import CommandSyntaxCamera from '@/documentation/command-syntax-camera.md'
 import CommandSyntaxEnclosure from '@/documentation/command-syntax-enclosure.md'
-import CommandSyntaxFilterwheel from '@/documentation/command-syntax-filterwheel.md'
+import CommandSyntaxFilterW from '@/documentation/command-syntax-filterwheel.md'
 import CommandSyntaxFocuser from '@/documentation/command-syntax-focuser.md'
 import CommandSyntaxMount from '@/documentation/command-syntax-mount.md'
 import CommandSyntaxRotator from '@/documentation/command-syntax-rotator.md'
 import CommandSyntaxSelector from '@/documentation/command-syntax-selector.md'
 import CommandSyntaxSwitch from '@/documentation/command-syntax-switch.md'
+import CommandSyntaxSequencer from '@/documentation/command-syntax-switch.md'
 import CommandSyntaxDescription from '@/documentation/command-syntax-description.md'
 
 export default {
@@ -57,12 +61,13 @@ export default {
         return {
             CommandSyntaxCamera,
             CommandSyntaxEnclosure,
-            CommandSyntaxFilterwheel,
+            CommandSyntaxFilterW,
             CommandSyntaxFocuser,
             CommandSyntaxMount,
             CommandSyntaxRotator,
             CommandSyntaxSelector,
             CommandSyntaxSwitch,
+            CommandSyntaxSequencer,
             CommandSyntaxDescription,
             selected_device: 'camera'
         }
@@ -70,4 +75,7 @@ export default {
 }
 </script>
 <style scoped>
+    .doc {
+        margin-top: 3em;
+    }
 </style>

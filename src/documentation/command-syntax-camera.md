@@ -11,8 +11,8 @@ It will also include three additional entries:
 ### Example Camera Command
 ```javascript
 example_camera_command = {
-    device: 'camera_1',
-    type: 'camera',
+    instance: 'camera1',
+    device: 'camera',
     timestamp: 1558111000,
     action: 'expose',
     required_params: {

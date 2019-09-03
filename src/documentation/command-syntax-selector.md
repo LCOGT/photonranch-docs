@@ -3,8 +3,8 @@
 
 ```js
 example_selector_command = {
-    device: 'selector_1', 
-    type: 'selector',
+    instance: 'selector1', 
+    device: 'selector',
     timestamp: 1558111000,
     action: 'set_position',
     required_params: {

@@ -2,8 +2,8 @@
 
 ```js
 example_rotate_command = {
-    device: 'rotator_2', 
-    type: 'rotator',
+    instance: 'rotator2', 
+    device: 'rotator',
     timestamp: 1558111000,
     action: 'move_relative',
     required_params: {

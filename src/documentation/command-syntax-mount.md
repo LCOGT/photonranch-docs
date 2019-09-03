@@ -3,8 +3,8 @@
 
 ```javascript
 example_mount_command = {
-    device: 'mount1',
-    type: 'mount',
+    instance: 'mount1',
+    device: 'mount',
     timestamp: 1558111000,
     action: 'go',
     required_params: {

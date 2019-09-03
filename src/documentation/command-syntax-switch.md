@@ -2,8 +2,8 @@
 
 ```js
 example_switch_command = {
-    device: 'switch_1', 
-    type: 'switch',
+    instance: 'switch1', 
+    device: 'switch',
     timestamp: 1558111000,
     action: 'pulse',
     required_params: {

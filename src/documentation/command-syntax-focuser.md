@@ -2,8 +2,8 @@
 
 ```js
 example_focuser_command = {
-    device: 'focuser_1', 
-    type: 'focuser',
+    instance: 'focuser1', 
+    device: 'focuser',
     timestamp: 1558111000,
     action: 'move_relative',
     required_params: {

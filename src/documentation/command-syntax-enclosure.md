@@ -2,8 +2,8 @@
 
 ```js
 example_enclosure_command = {
-    device: 'enclosure_1', 
-    type: 'enclosure',
+    instance: 'enclosure1', 
+    device: 'enclosure',
     timestamp: 1558111000,
     action: 'open',
     required_params: {},

@@ -3,8 +3,8 @@
 
  ```js
 example_filterwheel_command = {
-    device: 'filter_2',
-    type: 'filter',
+    instance: 'filter_wheel2',
+    device: 'filter_wheel',
     timestamp: 1558111000,
     action: 'set_position',
     required_params: {
