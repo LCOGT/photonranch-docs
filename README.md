@@ -1,6 +1,12 @@
-# ptr-docs
+#Photon Ranch Docs
+
+This repository is a [Vue app](http://photonranch-docs-dev.s3-website-us-east-1.amazonaws.com) documenting 
+syntax for the observatory commands for different device types. It is currently unused and unmaintained.
 
 ## Project setup
+
+For running the app locally on your device:
+
 ```
 npm install
 ```
